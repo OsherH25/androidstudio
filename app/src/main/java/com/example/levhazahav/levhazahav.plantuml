@@ -1,0 +1,385 @@
+@startuml
+
+title __LEVHAZAHAV's Class Diagram__\n
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.MainActivity {
+        ~ btnClassify : ImageButton
+        ~ btnInfo : ImageButton
+        ~ btnSearch : ImageButton
+        ~ btncalculate : ImageButton
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.MyDatabaseHelper {
+        {static} + COLUMN_ELDHOUSE_ADDRESS : String
+        {static} + COLUMN_ELDHOUSE_AGE_RANGE : String
+        {static} + COLUMN_ELDHOUSE_AVAILABLE_BEDS : String
+        {static} + COLUMN_ELDHOUSE_IS_1 : String
+        {static} + COLUMN_ELDHOUSE_IS_2 : String
+        {static} + COLUMN_ELDHOUSE_IS_3 : String
+        {static} + COLUMN_ELDHOUSE_IS_4 : String
+        {static} + COLUMN_ELDHOUSE_IS_5 : String
+        {static} + COLUMN_ELDHOUSE_IS_6 : String
+        {static} + COLUMN_ELDHOUSE_LAT : String
+        {static} + COLUMN_ELDHOUSE_LONG : String
+        {static} + COLUMN_ELDHOUSE_NAME : String
+        {static} + COLUMN_ELDHOUSE_PHONE_NUMBER : String
+        {static} + COLUMN_ELDHOUSE_RATING : String
+        {static} + COLUMN_ELDHOUSE_STAR_RATING : String
+        {static} + COLUMN_ELDHOUSE_ZONE : String
+        {static} + CREATE_TABLE_ELD_HOUSE : String
+        {static} + DATABASE_NAME : String
+        {static} + DATABASE_VERSION : int
+        {static} + TABLE_ELD_HOUSE : String
+        - database : SQLiteDatabase
+        + InsertToElderlyHouse()
+        + MyDatabaseHelper()
+        + deleteAllDataFromTblElderlyHouse()
+        + deleteElderlyHouseByRowName()
+        + getAllElderlyHouses()
+        + getAllElderlyHousesTest()
+        + onCreate()
+        + onUpgrade()
+        + open()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_calculate {
+        ~ btnContinueCalc : Button
+        ~ btnReturnCalc : Button
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+        - gotoUrl()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_class_q1 {
+        ~ btn_opt1_q1 : Button
+        ~ btn_opt2_q1 : Button
+        ~ btn_opt3_q1 : Button
+        ~ nav : BottomNavigationView
+        ~ returnQ1 : Button
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_class_q2 {
+        ~ btn_opt1_q2 : Button
+        ~ btn_opt2_q2 : Button
+        ~ btn_opt3_q2 : Button
+        ~ btn_opt4_q2 : Button
+        ~ nav : BottomNavigationView
+        ~ returnQ2 : Button
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_class_q3 {
+        ~ Classification : String
+        ~ btn_opt1_q3 : Button
+        ~ btn_opt2_q3 : Button
+        ~ btn_opt3_q3 : Button
+        ~ indication1 : int
+        ~ indication2 : int
+        ~ nav : BottomNavigationView
+        ~ returnQ3 : Button
+        ~ takeInfo : Intent
+        + onClick()
+        # onCreate()
+        - IntentToNextScreen()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_class_results {
+        ~ Classification : String
+        ~ btnGoToLvls : Button
+        ~ btnReturnToHomeQuestions : Button
+        ~ btnStartClassifyAgain : Button
+        ~ explainResults : TextView
+        ~ getInfo : Intent
+        ~ nav : BottomNavigationView
+        ~ tvResults : TextView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_classify {
+        ~ btnContinue : Button
+        ~ btnLvls : Button
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_classify2 {
+        ~ btnReturnClass2 : Button
+        ~ btnStartClassify : Button
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_direct_to_classify {
+        ~ btnContinueToClassify : Button
+        ~ btnReturnHomeDirect : Button
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_eld_house_view {
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_info {
+        ~ nav : BottomNavigationView
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_req_info {
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_req_info_2 {
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search {
+        ~ allElderlyHouses : ArrayList<elderlyHouse>
+        ~ btnReturnHome : Button
+        ~ btnStartSearch : Button
+        ~ elderlyHouseArrayAdapter : ArrayAdapter<elderlyHouse>
+        ~ elderlyHouseCursor : Cursor
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search_q1 {
+        ~ btnSearchOpt1Q1 : Button
+        ~ btnSearchOpt2Q1 : Button
+        ~ btnSearchOpt3Q1 : Button
+        ~ btnSearchReturnQ1 : Button
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search_q2 {
+        ~ btnDarom : CheckBox
+        ~ btnEilat : CheckBox
+        ~ btnHaifa : CheckBox
+        ~ btnJerusalem : CheckBox
+        ~ btnMerkaz : CheckBox
+        ~ btnSearchReturnQ2 : Button
+        ~ btnSharon : CheckBox
+        ~ btnZafon : CheckBox
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search_q3 {
+        ~ Age : String
+        ~ Zone : String
+        ~ ZoneHere : String
+        ~ btnSearchOpt1Q3 : Button
+        ~ btnSearchOpt2Q3 : Button
+        ~ btnSearchOpt3Q3 : Button
+        ~ btnSearchOpt4Q3 : Button
+        ~ btnSearchOpt5Q3 : Button
+        ~ btnSearchReturnQ3 : Button
+        ~ nav : BottomNavigationView
+        ~ takeZone : Intent
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search_q4 {
+        ~ btnSearchOpt1Q4 : Button
+        ~ btnSearchOpt2Q4 : Button
+        ~ btnSearchOpt3Q4 : Button
+        ~ btnSearchOpt4Q4 : Button
+        ~ btnSearchOpt5Q4 : Button
+        ~ btnSearchOpt6Q4 : Button
+        ~ btnSearchReturnQ4 : Button
+        ~ nav : BottomNavigationView
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search_results {
+        ~ nav : BottomNavigationView
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.elderlyHouse {
+        - Address : String
+        - AgeRange : int
+        - AvailableBeds : int
+        - EldHouseName : String
+        - Lat : String
+        - Long : String
+        - PhoneNumber : String
+        - Rating : double
+        - StarRating : int
+        - is1 : boolean
+        - is2 : boolean
+        - is3 : boolean
+        - is4 : boolean
+        - is5 : boolean
+        - is6 : boolean
+        - zone : int
+        + elderlyHouse()
+        + elderlyHouse()
+        + getAddress()
+        + getAgeRange()
+        + getAvailableBeds()
+        + getEldHouseName()
+        + getLat()
+        + getLong()
+        + getPhoneNumber()
+        + getRating()
+        + getStarRating()
+        + getZone()
+        + isIs1()
+        + isIs2()
+        + isIs3()
+        + isIs4()
+        + isIs5()
+        + isIs6()
+        + setAddress()
+        + setAgeRange()
+        + setAvailableBeds()
+        + setEldHouseName()
+        + setIs1()
+        + setIs2()
+        + setIs3()
+        + setIs4()
+        + setIs5()
+        + setIs6()
+        + setLat()
+        + setLong()
+        + setPhoneNumber()
+        + setRating()
+        + setStarRating()
+        + setZone()
+        + toString()
+    }
+  }
+  
+
+  com.example.levhazahav.MainActivity .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.MyDatabaseHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  com.example.levhazahav.activity_calculate .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_calculate -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_class_q1 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_class_q1 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_class_q2 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_class_q2 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_class_q3 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_class_q3 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_class_results .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_class_results -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_classify .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_classify -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_classify2 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_classify2 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_direct_to_classify .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_direct_to_classify -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_eld_house_view -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_info -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_req_info .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_req_info -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_req_info_2 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_req_info_2 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_search -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search o-- com.example.levhazahav.elderlyHouse : elderlyHouse1
+  com.example.levhazahav.activity_search o-- com.example.levhazahav.elderlyHouse : elderlyHouseT
+  com.example.levhazahav.activity_search o-- com.example.levhazahav.MyDatabaseHelper : myDatabaseHelper
+  com.example.levhazahav.activity_search_q1 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_search_q1 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search_q2 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_search_q2 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search_q3 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_search_q3 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search_q4 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_search_q4 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search_results -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

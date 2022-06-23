@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context=".activity_class_q1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="326dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="מהו אזור החיפוש המועדף עבורך? ניתן לבחור יותר מאזור אחד "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.194"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnSearchReturnQ2"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:background="@drawable/return_arrow"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.983"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.067"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2/4"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/btnHaifa"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/btn_curved"
+            android:backgroundTint="@color/def"
+            android:gravity="center"
+            android:text="חיפה והסביבה"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.425" />
+
+        <CheckBox
+            android:id="@+id/btnSharon"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/btn_curved"
+            android:backgroundTint="@color/def"
+            android:gravity="center"
+            android:text="איזור השרון"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.513" />
+
+        <CheckBox
+            android:id="@+id/btnZafon"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_curved"
+            android:backgroundTint="@color/def"
+            android:gravity="center"
+            android:text="אזור הצפון"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.336" />
+
+        <CheckBox
+            android:id="@+id/btnEilat"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/btn_curved"
+            android:backgroundTint="@color/def"
+            android:gravity="center"
+            android:text="אילת"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.861" />
+
+        <CheckBox
+            android:id="@+id/btnDarom"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/btn_curved"
+            android:backgroundTint="@color/def"
+            android:gravity="center"
+            android:text="מחוז דרום"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.775" />
+
+        <CheckBox
+            android:id="@+id/btnJerusalem"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/btn_curved"
+            android:backgroundTint="@color/def"
+            android:gravity="center"
+            android:text="מחוז ירושלים"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.691" />
+
+        <CheckBox
+            android:id="@+id/btnMerkaz"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/btn_curved"
+            android:backgroundTint="@color/def"
+            android:gravity="center"
+            android:text="איזור המרכז"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.604" />
+
+
+        <Button
+            android:id="@+id/btnSearchNext"
+            android:layout_width="98dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="616dp"
+            android:background="@drawable/btn_curved"
+            android:text="המשך "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-3dp"
+        app:itemBackground="@color/def"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_bar" />
+
+
+</RelativeLayout>

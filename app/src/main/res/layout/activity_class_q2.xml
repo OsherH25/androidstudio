@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context=".activity_class_q1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="326dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="האם בן משפחתך מתפקד באופן עצמאי ללא סיוע?"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.134"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnOpt1Q2"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_curved"
+            android:text="כן"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.261" />
+
+        <Button
+            android:id="@+id/btnOpt2Q2"
+            android:layout_width="200dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/btn_curved"
+            android:gravity="center"
+            android:text="לא,בן משפחתי סובל ממצב רפואי המצריך איפול רפואיא מורכב (דיאליזה ,מונשם , פצע לחץ דרגה 3)"
+            app:layout_constraintBottom_toTopOf="@+id/btnOpt3Q2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnOpt1Q2"
+            app:layout_constraintVertical_bias="0.992"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnOpt3Q2"
+            android:layout_width="200dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_curved"
+            android:text="לא, מתהלך עם מקל או הליכון ומתקשה בתפקוד היום יום כמו הלבשה וכו’"
+            app:layout_constraintBottom_toTopOf="@+id/btnOpt4Q2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnOpt1Q2"
+            app:layout_constraintVertical_bias="0.944"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnOpt4Q2"
+            android:layout_width="200dp"
+            android:layout_height="114dp"
+            android:background="@drawable/btn_curved"
+            android:text="לא, אינו שולט על הצרכים, נעזר בתמיכה קבועה של מטפל להליכה או מרותק לכיסא גלגלים "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.883"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnReturnQ2"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:background="@drawable/return_arrow"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.994"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.054"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2/3"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-3dp"
+        app:itemBackground="@color/def"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_bar" />
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context=".activity_class_q1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/question4search"
+            android:layout_width="326dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="מהו הסיווג הרפואי של בן משפחתך? "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+
+        <Button
+            android:id="@+id/btnSearchOpt1Q4"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_curved"
+            android:text="עצמאי"
+            app:layout_constraintBottom_toTopOf="@+id/btnSearchOpt2Q4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.962"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnSearchOpt2Q4"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_curved"
+            android:gravity="center"
+            android:text="תשוש"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="321dp" />
+
+        <Button
+            android:id="@+id/btnSearchOpt3Q4"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_curved"
+            android:text="סיעודי"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="386dp" />
+
+        <Button
+            android:id="@+id/btnSearchOpt4Q4"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_curved"
+            android:text="תשוש נפש"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="448dp" />
+
+        <Button
+            android:id="@+id/btnSearchOpt5Q4"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_curved"
+            android:gravity="center"
+            android:text="סיעודי מורכב"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <Button
+            android:id="@+id/btnSearchOpt6Q4"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_curved"
+            android:text="אחר"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="573dp" />
+
+        <Button
+            android:id="@+id/btnSearchReturnQ4"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:background="@drawable/return_arrow"
+            android:backgroundTint="@color/black"
+            tools:ignore="MissingConstraints"
+
+            tools:layout_editor_absoluteX="358dp"
+            tools:layout_editor_absoluteY="34dp" />
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4/4"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="190dp"
+            tools:layout_editor_absoluteY="25dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-3dp"
+        app:itemBackground="@color/def"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_bar" />
+
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+@startuml
+
+title __LEVHAZAHAV.APP's Class Diagram__\n
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.MainActivity {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.MyDatabaseHelper {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_calculate {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_class_q1 {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_class_q2 {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_class_q3 {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_class_results {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_classify {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_classify2 {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_direct_to_classify {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_eld_house_view {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_info {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_req_info {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_req_info_2 {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search_q1 {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search_q2 {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search_q3 {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search_q4 {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.activity_search_results {
+    }
+  }
+  
+
+  namespace com.example.levhazahav {
+    class com.example.levhazahav.elderlyHouse {
+    }
+  }
+  
+
+  com.example.levhazahav.MainActivity .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.MyDatabaseHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  com.example.levhazahav.activity_calculate .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_calculate -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_class_q1 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_class_q1 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_class_q2 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_class_q2 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_class_q3 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_class_q3 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_class_results .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_class_results -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_classify .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_classify -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_classify2 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_classify2 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_direct_to_classify .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_direct_to_classify -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_eld_house_view -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_info -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_req_info .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_req_info -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_req_info_2 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_req_info_2 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_search -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search o-- com.example.levhazahav.elderlyHouse : elderlyHouse1
+  com.example.levhazahav.activity_search o-- com.example.levhazahav.elderlyHouse : elderlyHouseT
+  com.example.levhazahav.activity_search o-- com.example.levhazahav.MyDatabaseHelper : myDatabaseHelper
+  com.example.levhazahav.activity_search_q1 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_search_q1 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search_q2 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_search_q2 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search_q3 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_search_q3 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search_q4 .up.|> android.view.View.OnClickListener
+  com.example.levhazahav.activity_search_q4 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.levhazahav.activity_search_results -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
