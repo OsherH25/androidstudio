@@ -56,9 +56,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
             + "(" + COLUMN_ELDHOUSE_NAME + " VARCHAR,"
             + COLUMN_ELDHOUSE_ADDRESS + " VARCHAR," + COLUMN_ELDHOUSE_PHONE_NUMBER + " VARCHAR,"
             + COLUMN_ELDHOUSE_LONG + " VARCHAR," + COLUMN_ELDHOUSE_LAT + " VARCHAR," + COLUMN_ELDHOUSE_AVAILABLE_BEDS + " INTEGER," + COLUMN_ELDHOUSE_RATING + " DOUBLE,"
-            + COLUMN_ELDHOUSE_STAR_RATING + " INTEGER," + COLUMN_ELDHOUSE_IS_1 + " BOOLEAN," + COLUMN_ELDHOUSE_IS_2 + " BOOLEAN,"
-            + COLUMN_ELDHOUSE_IS_3 + " BOOLEAN," + COLUMN_ELDHOUSE_IS_4 + " BOOLEAN," + COLUMN_ELDHOUSE_IS_5
-            + " BOOLEAN," + COLUMN_ELDHOUSE_IS_6 + " BOOLEAN," + COLUMN_ELDHOUSE_ZONE + " INTEGER," + COLUMN_ELDHOUSE_AGE_RANGE +  " INTEGER" + ");";
+            + COLUMN_ELDHOUSE_STAR_RATING + " INTEGER," + COLUMN_ELDHOUSE_IS_1 + " INTEGER," + COLUMN_ELDHOUSE_IS_2 + " INTEGER,"
+            + COLUMN_ELDHOUSE_IS_3 + " INTEGER," + COLUMN_ELDHOUSE_IS_4 + " INTEGER," + COLUMN_ELDHOUSE_IS_5
+            + " INTEGER," + COLUMN_ELDHOUSE_IS_6 + " INTEGER," + COLUMN_ELDHOUSE_ZONE + " INTEGER," + COLUMN_ELDHOUSE_AGE_RANGE +  " INTEGER" + ");";
 
 
 
@@ -90,12 +90,12 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         ELD_House_value.put(COLUMN_ELDHOUSE_AVAILABLE_BEDS,elderlyHouse.getAvailableBeds());
         ELD_House_value.put(COLUMN_ELDHOUSE_RATING,elderlyHouse.getRating());
         ELD_House_value.put(COLUMN_ELDHOUSE_STAR_RATING,elderlyHouse.getStarRating());
-        ELD_House_value.put(COLUMN_ELDHOUSE_IS_1,elderlyHouse.isIs1());
-        ELD_House_value.put(COLUMN_ELDHOUSE_IS_2,elderlyHouse.isIs2());
-        ELD_House_value.put(COLUMN_ELDHOUSE_IS_3,elderlyHouse.isIs3());
-        ELD_House_value.put(COLUMN_ELDHOUSE_IS_4,elderlyHouse.isIs4());
-        ELD_House_value.put(COLUMN_ELDHOUSE_IS_5,elderlyHouse.isIs5());
-        ELD_House_value.put(COLUMN_ELDHOUSE_IS_6,elderlyHouse.isIs6());
+        ELD_House_value.put(COLUMN_ELDHOUSE_IS_1,elderlyHouse.getIs1());
+        ELD_House_value.put(COLUMN_ELDHOUSE_IS_2,elderlyHouse.getIs2());
+        ELD_House_value.put(COLUMN_ELDHOUSE_IS_3,elderlyHouse.getIs3());
+        ELD_House_value.put(COLUMN_ELDHOUSE_IS_4,elderlyHouse.getIs4());
+        ELD_House_value.put(COLUMN_ELDHOUSE_IS_5,elderlyHouse.getIs5());
+        ELD_House_value.put(COLUMN_ELDHOUSE_IS_6,elderlyHouse.getIs6());
         ELD_House_value.put(COLUMN_ELDHOUSE_ZONE,elderlyHouse.getZone());
         ELD_House_value.put(COLUMN_ELDHOUSE_AGE_RANGE,elderlyHouse.getAgeRange());
 
@@ -121,14 +121,14 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
                 @SuppressLint("Range")int  AvailableBeds =cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_AVAILABLE_BEDS));
                 @SuppressLint("Range")double Rating=cursor.getDouble(cursor.getColumnIndex(COLUMN_ELDHOUSE_RATING));
                 @SuppressLint("Range")int StarRating=cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_STAR_RATING));
-                @SuppressLint("Range")boolean is1= new Boolean(cursor.getString(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_1 ))).booleanValue();
-                @SuppressLint("Range")boolean is2= new Boolean(cursor.getString(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_2 ))).booleanValue();
-                @SuppressLint("Range")boolean is3= new Boolean(cursor.getString(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_3 ))).booleanValue();
-                @SuppressLint("Range")boolean is4= new Boolean(cursor.getString(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_4 ))).booleanValue();
-                @SuppressLint("Range")boolean is5= new Boolean(cursor.getString(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_5 ))).booleanValue();
-                @SuppressLint("Range")boolean is6= new Boolean(cursor.getString(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_6 ))).booleanValue();
+                @SuppressLint("Range")int is1= cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_1 ));
+                @SuppressLint("Range")int is2= cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_2 ));
+                @SuppressLint("Range")int is3= cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_3 ));
+                @SuppressLint("Range")int is4= cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_4 ));
+                @SuppressLint("Range")int is5= cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_5 ));
+                @SuppressLint("Range")int is6= cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_IS_6 ));
                 @SuppressLint("Range")int Zone=cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_ZONE));
-                @SuppressLint("Range") int AgeRange =cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_ZONE));
+                @SuppressLint("Range") int AgeRange =cursor.getInt(cursor.getColumnIndex(COLUMN_ELDHOUSE_AGE_RANGE));
                 elderlyHouse currElderlyHouse= new elderlyHouse(EldHouseName, Address, PhoneNumber,Lat,Long,AvailableBeds,Rating,StarRating,is1,is2,is3,is4,is5,is6,Zone,AgeRange);
                 elderlyHouseArr.add(currElderlyHouse);
             }
@@ -143,7 +143,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         String[] columns = new String[] {COLUMN_ELDHOUSE_NAME, COLUMN_ELDHOUSE_ADDRESS,COLUMN_ELDHOUSE_PHONE_NUMBER,
                 COLUMN_ELDHOUSE_LAT, COLUMN_ELDHOUSE_LONG,COLUMN_ELDHOUSE_AVAILABLE_BEDS,COLUMN_ELDHOUSE_RATING,COLUMN_ELDHOUSE_STAR_RATING,COLUMN_ELDHOUSE_IS_1
                 ,COLUMN_ELDHOUSE_IS_2,COLUMN_ELDHOUSE_IS_3,COLUMN_ELDHOUSE_IS_4,COLUMN_ELDHOUSE_IS_5,COLUMN_ELDHOUSE_IS_6
-                ,COLUMN_ELDHOUSE_ZONE,COLUMN_ELDHOUSE_ZONE};
+                ,COLUMN_ELDHOUSE_ZONE,COLUMN_ELDHOUSE_AGE_RANGE};
 
         return database.query(TABLE_ELD_HOUSE, columns, null,
                 null, null, null, null);
@@ -164,7 +164,6 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         String str_sql= "DELETE FROM "+ TABLE_ELD_HOUSE+ " WHERE" + COLUMN_ELDHOUSE_NAME + "="+ EldHouseName;
         database.execSQL(str_sql);
     }
-
 
 
 }

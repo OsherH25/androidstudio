@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:layout_gravity="center|start"
     android:padding="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -37,28 +36,29 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.914"
+            app:layout_constraintHorizontal_bias="0.85"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.007" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="20dp"
+            android:layout_width="0dp"
             android:layout_height="23dp"
             android:foregroundGravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.117"
             app:layout_constraintStart_toEndOf="@+id/tvshare"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.001"
+            app:layout_constraintVertical_bias="0.011"
             app:srcCompat="@drawable/share" />
 
         <TextView
             android:id="@+id/tvEldHouseName"
             android:layout_width="225dp"
             android:layout_height="35dp"
-            android:layout_gravity="center"
+
             android:layout_marginEnd="3dp"
             android:text="מוסד נאות אבי יפו"
             android:textColor="@color/black"
@@ -66,10 +66,10 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.896"
+            app:layout_constraintHorizontal_bias="0.774"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.42" />
+            app:layout_constraintVertical_bias="0.418" />
 
         <TextView
             android:id="@+id/tvLocation"
@@ -77,11 +77,10 @@
             android:layout_height="28dp"
             android:layout_marginStart="5dp"
             android:layout_marginBottom="5dp"
-            android:gravity="center"
             android:text="ציונה ת’גר 5, תל אביב - יפו"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.765"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.868" />
@@ -94,7 +93,7 @@
             android:layout_marginBottom="9dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.994"
+            app:layout_constraintHorizontal_bias="0.964"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.433"
@@ -108,10 +107,10 @@
             android:layout_marginBottom="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.994"
+            app:layout_constraintHorizontal_bias="0.967"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.821"
+            app:layout_constraintVertical_bias="0.785"
             app:srcCompat="@drawable/map_marker" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

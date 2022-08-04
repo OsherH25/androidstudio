@@ -13,59 +13,38 @@ public class elderlyHouse {
     private int AvailableBeds;
     private double Rating;
     private int StarRating;
-    private boolean is1;
-    private boolean is2;
-    private boolean is3;
-    private boolean is4;
-    private boolean is5;
-    private boolean is6;
+    private int is1;
+    private int is2;
+    private int is3;
+    private int is4;
+    private int is5;
+    private int is6;
     private int zone;
     private int AgeRange;
 
     public elderlyHouse() {
-        EldHouseName = "";
-        Address = "";
-        PhoneNumber = "phoneNumber";
-        Lat = "lat";
-        Long = "aLong";
-        AvailableBeds = 0;
-        Rating = 0.0;
-        StarRating = 0;
-        this.is1 = false;
-        this.is2 = false;
-        this.is3 = false;
-        this.is4 = false;
-        this.is5 = false;
-        this.is6 = false;
-        this.zone = 0;
-        AgeRange = 0;
-
-
     }
 
     @Override
     public String toString() {
-        return "sdasd";
-    }
-
-
-    public elderlyHouse(String eldHouseName, String address, String phoneNumber, String lat, String aLong, int availableBeds, double rating, int starRating, boolean is1, boolean is2, boolean is3, boolean is4, boolean is5, boolean is6, int zone, int ageRange) {
-        EldHouseName = eldHouseName;
-        Address = address;
-        PhoneNumber = phoneNumber;
-        Lat = lat;
-        Long = aLong;
-        AvailableBeds = availableBeds;
-        Rating = rating;
-        StarRating = starRating;
-        this.is1 = is1;
-        this.is2 = is2;
-        this.is3 = is3;
-        this.is4 = is4;
-        this.is5 = is5;
-        this.is6 = is6;
-        this.zone = zone;
-        AgeRange = ageRange;
+        return "elderlyHouse{" +
+                "EldHouseName='" + EldHouseName + '\'' +
+                ", Address='" + Address + '\'' +
+                ", PhoneNumber='" + PhoneNumber + '\'' +
+                ", Lat='" + Lat + '\'' +
+                ", Long='" + Long + '\'' +
+                ", AvailableBeds=" + AvailableBeds +
+                ", Rating=" + Rating +
+                ", StarRating=" + StarRating +
+                ", is1=" + is1 +
+                ", is2=" + is2 +
+                ", is3=" + is3 +
+                ", is4=" + is4 +
+                ", is5=" + is5 +
+                ", is6=" + is6 +
+                ", zone=" + zone +
+                ", AgeRange=" + AgeRange +
+                '}';
     }
 
     public String getEldHouseName() {
@@ -132,51 +111,51 @@ public class elderlyHouse {
         StarRating = starRating;
     }
 
-    public boolean isIs1() {
+    public int getIs1() {
         return is1;
     }
 
-    public void setIs1(boolean is1) {
+    public void setIs1(int is1) {
         this.is1 = is1;
     }
 
-    public boolean isIs2() {
+    public int getIs2() {
         return is2;
     }
 
-    public void setIs2(boolean is2) {
+    public void setIs2(int is2) {
         this.is2 = is2;
     }
 
-    public boolean isIs3() {
+    public int getIs3() {
         return is3;
     }
 
-    public void setIs3(boolean is3) {
+    public void setIs3(int is3) {
         this.is3 = is3;
     }
 
-    public boolean isIs4() {
+    public int getIs4() {
         return is4;
     }
 
-    public void setIs4(boolean is4) {
+    public void setIs4(int is4) {
         this.is4 = is4;
     }
 
-    public boolean isIs5() {
+    public int getIs5() {
         return is5;
     }
 
-    public void setIs5(boolean is5) {
+    public void setIs5(int is5) {
         this.is5 = is5;
     }
 
-    public boolean isIs6() {
+    public int getIs6() {
         return is6;
     }
 
-    public void setIs6(boolean is6) {
+    public void setIs6(int is6) {
         this.is6 = is6;
     }
 
@@ -196,6 +175,22 @@ public class elderlyHouse {
         AgeRange = ageRange;
     }
 
-
-
+    public elderlyHouse(String eldHouseName, String address, String phoneNumber, String lat, String aLong, int availableBeds, double rating, int starRating, int is1, int is2, int is3, int is4, int is5, int is6, int zone, int ageRange) {
+        EldHouseName = eldHouseName;
+        Address = address;
+        PhoneNumber = phoneNumber;
+        Lat = lat;
+        Long = aLong;
+        AvailableBeds = availableBeds;
+        Rating = rating;
+        StarRating = starRating;
+        this.is1 = is1;
+        this.is2 = is2;
+        this.is3 = is3;
+        this.is4 = is4;
+        this.is5 = is5;
+        this.is6 = is6;
+        this.zone = zone;
+        AgeRange = ageRange;
+    }
 }

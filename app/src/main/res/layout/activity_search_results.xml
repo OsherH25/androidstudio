@@ -24,7 +24,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btnReturnQ3"
+            android:id="@+id/btnReturnResults"
             android:layout_width="57dp"
             android:layout_height="48dp"
             android:background="@drawable/return_arrow"
@@ -49,30 +49,35 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.072"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_bias="0.072" />
+
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvResultNum"
             android:layout_width="227dp"
             android:layout_height="35dp"
-            android:text="נמצאו 7 תוצאות חיפוש "
+            android:gravity="right"
+            android:text="נמצאו 10 תוצאות חיפוש"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:gravity="right"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.695"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.199" />
 
         <ListView
-            android:layout_width="409dp"
-            android:layout_height="555dp"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="175dp"
-            tools:listitem="@layout/list_group"/>
+            android:id="@+id/lv"
+            android:layout_width="378dp"
+            android:layout_height="461dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.988"
+            tools:listitem="@layout/list_group" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

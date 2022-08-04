@@ -93,7 +93,7 @@ public class activity_search_q2 extends AppCompatActivity implements View.OnClic
 
         if(btnZafon.isChecked()){
             Intent intent = new Intent(activity_search_q2.this, activity_search_q3.class);
-            intent.putExtra("Zone", "צפון");
+            intent.putExtra("Zone", "1");
             startActivity(intent);
 
 
@@ -101,42 +101,42 @@ public class activity_search_q2 extends AppCompatActivity implements View.OnClic
 
         if(btnHaifa.isChecked()){
             Intent intent = new Intent(activity_search_q2.this, activity_search_q3.class);
-            intent.putExtra("Zone", "חיפה");
+            intent.putExtra("Zone", "2");
             startActivity(intent);
 
 
         }
         if(btnSharon.isChecked()){
             Intent intent = new Intent(activity_search_q2.this, activity_search_q3.class);
-            intent.putExtra("Zone", "שרון");
+            intent.putExtra("Zone", "3");
             startActivity(intent);
 
 
         }
         if(btnMerkaz.isChecked()){
             Intent intent = new Intent(activity_search_q2.this, activity_search_q3.class);
-            intent.putExtra("Zone", "מרכז");
+            intent.putExtra("Zone", "4");
             startActivity(intent);
 
 
         }
         if(btnJerusalem.isChecked()){
             Intent intent = new Intent(activity_search_q2.this, activity_search_q3.class);
-            intent.putExtra("Zone", "ירושלים");
+            intent.putExtra("Zone", "5");
             startActivity(intent);
 
 
         }
         if(btnDarom.isChecked()){
             Intent intent = new Intent(activity_search_q2.this, activity_search_q3.class);
-            intent.putExtra("Zone", "דרום");
+            intent.putExtra("Zone", "6");
             startActivity(intent);
 
 
         }
         if(btnEilat.isChecked()){
             Intent intent = new Intent(activity_search_q2.this, activity_search_q3.class);
-            intent.putExtra("Zone", "אילת");
+            intent.putExtra("Zone", "7");
             startActivity(intent);
 
 

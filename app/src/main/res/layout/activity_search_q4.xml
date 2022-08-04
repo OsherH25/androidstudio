@@ -22,10 +22,12 @@
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="128dp" />
-
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.21" />
 
         <Button
             android:id="@+id/btnSearchOpt1Q4"
@@ -33,13 +35,12 @@
             android:layout_height="55dp"
             android:background="@drawable/btn_curved"
             android:text="עצמאי"
-            app:layout_constraintBottom_toTopOf="@+id/btnSearchOpt2Q4"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.962"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_bias="0.369" />
 
         <Button
             android:id="@+id/btnSearchOpt2Q4"
@@ -48,9 +49,12 @@
             android:background="@drawable/btn_curved"
             android:gravity="center"
             android:text="תשוש"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="321dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.465" />
 
         <Button
             android:id="@+id/btnSearchOpt3Q4"
@@ -58,9 +62,12 @@
             android:layout_height="55dp"
             android:background="@drawable/btn_curved"
             android:text="סיעודי"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="386dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.562" />
 
         <Button
             android:id="@+id/btnSearchOpt4Q4"
@@ -68,9 +75,12 @@
             android:layout_height="55dp"
             android:background="@drawable/btn_curved"
             android:text="תשוש נפש"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="448dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.653" />
 
         <Button
             android:id="@+id/btnSearchOpt5Q4"
@@ -79,19 +89,25 @@
             android:background="@drawable/btn_curved"
             android:gravity="center"
             android:text="סיעודי מורכב"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="510dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.752" />
 
         <Button
             android:id="@+id/btnSearchOpt6Q4"
             android:layout_width="160dp"
             android:layout_height="55dp"
             android:background="@drawable/btn_curved"
-            android:text="אחר"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="573dp" />
+            android:text="אינני יודע"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.849" />
 
         <Button
             android:id="@+id/btnSearchReturnQ4"
@@ -99,7 +115,6 @@
             android:layout_height="48dp"
             android:background="@drawable/return_arrow"
             android:backgroundTint="@color/black"
-            tools:ignore="MissingConstraints"
 
             tools:layout_editor_absoluteX="358dp"
             tools:layout_editor_absoluteY="34dp" />
@@ -112,9 +127,12 @@
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="190dp"
-            tools:layout_editor_absoluteY="25dp" />
+            app:layout_constraintBottom_toTopOf="@+id/question4search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.32" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

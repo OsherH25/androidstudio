@@ -7,17 +7,6 @@
     android:background="@drawable/appbackground"
     tools:context=".activity_req_info">
 
-
-
-
-
-
-
-
-
-
-
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -36,12 +25,12 @@
 
 
         <TextView
-            android:id="@+id/tvResults"
+            android:id="@+id/tvResults1"
             android:layout_width="326dp"
             android:layout_height="97dp"
             android:background="@drawable/btn_curved"
             android:gravity="center"
-            android:text="לפי המידע שהזנת , הסיווג הרפואי של בן משפחתך הינו סיעודי"
+            android:text="הסיווג הרפואי שלך עוד לא אובחן , בצע את השאלון לקבלת הסיווג הרפואי"
             android:textColor="@color/white"
             android:textSize="15dp"
             android:textStyle="bold"
@@ -52,98 +41,138 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.061" />
 
+
         <TextView
-            android:id="@+id/question4search"
+            android:id="@+id/tvheader"
             android:layout_width="313dp"
             android:layout_height="51dp"
             android:gravity="center"
-            android:text="שלב שני - הגשת טפסים"
+            android:text="שלב ראשון - הכנת טפסים נדרשים להגשה"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="49dp"
-            tools:layout_editor_absoluteY="144dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.229" />
 
 
         <TextView
-            android:id="@+id/question4search"
+            android:id="@+id/tvtodo2"
             android:layout_width="276dp"
             android:layout_height="70dp"
             android:gravity="center"
-            android:text="להגשת בקשה אונליין"
+            android:text="טופש מידע רפואי / סיעודי מלא וחתום, עדכני מהחודש האחרון "
+            android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="119dp"
-            tools:layout_editor_absoluteY="406dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.529" />
 
         <TextView
-            android:id="@+id/question4search3"
+            android:id="@+id/tvtodo3"
             android:layout_width="276dp"
             android:layout_height="70dp"
             android:gravity="center"
-            android:text="לאיתור מחלקה למחלות ממשוכות עפ”י כתובת"
+            android:text="דוח סוציאלי למתן שירותים מלא וחתום , עדכני מהחודש האחרון "
+            android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="119dp"
-            tools:layout_editor_absoluteY="330dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.636" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="51dp"
+            android:layout_height="59dp"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.922"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.433" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="51dp"
+            android:layout_height="59dp"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.922"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="51dp"
+            android:layout_height="59dp"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.922"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.626" />
+
+        <TextView
+            android:id="@+id/tvtodo1"
+            android:layout_width="276dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="צילום ת''ז של המועמד לאשפוז כולל ספח בו מופיעים גם הכתובת וגם פרטי הילדים"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.423" />
 
         <TextView
             android:id="@+id/question4search2"
             android:layout_width="331dp"
             android:layout_height="122dp"
             android:gravity="center"
-            android:text="לאחר שיש ברשותך את כל המסמכים הדרושים, ניתן להגיש אותם בדרכים הבאות:למחלקה למחלות ממושכות בלשכת הבריאות במקום מגוריו של המטופל, עפ”י כתובתו בת”ז.ההגשה יכולה להתבצע: פיזית, בדואר אלקטרוני, פקס או הגשה אונליין"
-            android:textSize="15dp"
+            android:text="על מנת להגיש בקשה לקביעת המצב הרפואי - תפקודי יש לדאוג לטפסים הבאים"
+            android:textSize="17dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="46dp"
-            tools:layout_editor_absoluteY="200dp" />
-
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.292" />
 
         <Button
-            android:id="@+id/btnSearchOpt1Q4"
+            android:id="@+id/btnGotolvl1"
             android:layout_width="160dp"
             android:layout_height="55dp"
-            android:layout_marginTop="572dp"
             android:background="@drawable/btn_curved"
-            android:text="חזרה לשלב 1 "
+            android:text="המשך לשלב 2 "
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.561"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_bias="0.788" />
 
         <Button
-            android:id="@+id/btnSearchOpt1Q2"
-            android:layout_width="98dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="416dp"
-            android:background="@drawable/btn_curved"
-            android:text="לחץ כאן "
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.067"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/btnSearchOpt1Q5"
-            android:layout_width="98dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="336dp"
-            android:background="@drawable/btn_curved"
-            android:text="לחץ כאן"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.063"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/btnReturnHome"
+            android:id="@+id/btnReturnHome1"
             android:layout_width="wrap_content"
             android:layout_height="59dp"
             android:background="@android:color/transparent"
@@ -151,8 +180,13 @@
             android:textColor="@color/black"
             android:textSize="16dp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="140dp"
-            tools:layout_editor_absoluteY="509dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.564"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

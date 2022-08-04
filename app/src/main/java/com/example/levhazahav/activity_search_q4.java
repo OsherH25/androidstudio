@@ -24,7 +24,8 @@ public class activity_search_q4 extends AppCompatActivity implements View.OnClic
     Button btnSearchOpt5Q4;
     Button btnSearchOpt6Q4;
     Button btnSearchReturnQ4;
-
+    Intent  takeAge;
+    String zone , age;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,6 @@ public class activity_search_q4 extends AppCompatActivity implements View.OnClic
         btnSearchOpt6Q4 = findViewById(R.id.btnSearchOpt6Q4);
         btnSearchReturnQ4 = findViewById(R.id.btnSearchReturnQ4);
 
-
         btnSearchOpt1Q4.setOnClickListener(this);
         btnSearchOpt2Q4.setOnClickListener(this);
         btnSearchOpt3Q4.setOnClickListener(this);
@@ -49,6 +49,14 @@ public class activity_search_q4 extends AppCompatActivity implements View.OnClic
         btnSearchOpt5Q4.setOnClickListener(this);
         btnSearchOpt6Q4.setOnClickListener(this);
         btnSearchReturnQ4.setOnClickListener(this);
+
+
+
+        takeAge= getIntent();
+        age = takeAge.getStringExtra("Age");
+        zone = takeAge.getStringExtra("Zone");
+
+
 
 
         nav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -96,16 +104,58 @@ public class activity_search_q4 extends AppCompatActivity implements View.OnClic
         switch (view.getId()) {
 
 
-            case R.id.btnOpt1Q2:
-                Intent intent = new Intent(activity_search_q4.this, activity_class_q3.class);
-                intent.putExtra("indexQ2", 1);
+
+            case R.id.btnSearchOpt1Q4:
+                Intent intent = new Intent(activity_search_q4.this, activity_search_results.class);
+                intent.putExtra("Age", age);
+                intent.putExtra("Zone", zone);
+                intent.putExtra("Class", "1");
                 startActivity(intent);
                 break;
 
+            case R.id.btnSearchOpt2Q4:
+                Intent intent1 = new Intent(activity_search_q4.this,  activity_search_results.class);
+                intent1.putExtra("Age", age);
+                intent1.putExtra("Zone", zone);
+                intent1.putExtra("Class", "2");
+                startActivity(intent1);
+                break;
+
+            case R.id.btnSearchOpt3Q4:
+                Intent intent2 = new Intent(activity_search_q4.this,  activity_search_results.class);
+                intent2.putExtra("Age", age);
+                intent2.putExtra("Zone", zone);
+                intent2.putExtra("Class", "3");
+                startActivity(intent2);
+                break;
+
+            case R.id.btnSearchOpt4Q4:
+                Intent intent3 = new Intent(activity_search_q4.this,  activity_search_results.class);
+                intent3.putExtra("Age", age);
+                intent3.putExtra("Zone", zone);;
+                intent3.putExtra("Class", "4");
+                startActivity(intent3);
+                break;
+
+            case R.id.btnSearchOpt5Q4:
+                Intent intent4 = new Intent(activity_search_q4.this,  activity_search_results.class);
+                intent4.putExtra("Age", age);
+                intent4.putExtra("Zone",  zone);;
+                intent4.putExtra("Class", "4");
+                startActivity(intent4);
+                break;
+
+            case R.id.btnSearchReturnQ4:
+                Intent intent5 = new Intent(activity_search_q4.this, activity_search_q3.class);
+                startActivity(intent5);
+                break;
+
+            case R.id.btnSearchOpt6Q4:
+                Intent intent6 = new Intent(activity_search_q4.this, activity_direct_to_classify.class);
+                startActivity(intent6);
+                break;
 
         }
-
-
 
 
     }

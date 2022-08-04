@@ -25,12 +25,12 @@
 
 
         <TextView
-            android:id="@+id/tvResults"
+            android:id="@+id/tvResults2"
             android:layout_width="326dp"
             android:layout_height="97dp"
             android:background="@drawable/btn_curved"
             android:gravity="center"
-            android:text="לפי המידע שהזנת , הסיווג הרפואי של בן משפחתך הינו סיעודי"
+            android:text="הסיווג הרפואי שלך עוד לא אובחן , בצע את השאלון לקבלת הסיווג הרפואי"
             android:textColor="@color/white"
             android:textSize="15dp"
             android:textStyle="bold"
@@ -41,8 +41,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.061" />
 
+
         <TextView
-            android:id="@+id/question4search"
+            android:id="@+id/tvheader"
             android:layout_width="313dp"
             android:layout_height="51dp"
             android:gravity="center"
@@ -50,10 +51,12 @@
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="49dp"
-            tools:layout_editor_absoluteY="144dp" />
-
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
 
         <TextView
             android:id="@+id/question4search"
@@ -61,11 +64,15 @@
             android:layout_height="70dp"
             android:gravity="center"
             android:text="להגשת בקשה אונליין"
+            android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="119dp"
-            tools:layout_editor_absoluteY="406dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.881"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.605" />
 
         <TextView
             android:id="@+id/question4search3"
@@ -73,11 +80,15 @@
             android:layout_height="70dp"
             android:gravity="center"
             android:text="לאיתור מחלקה למחלות ממשוכות עפ”י כתובת"
+            android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="119dp"
-            tools:layout_editor_absoluteY="330dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.881"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
         <TextView
             android:id="@+id/question4search2"
@@ -87,52 +98,53 @@
             android:text="לאחר שיש ברשותך את כל המסמכים הדרושים, ניתן להגיש אותם בדרכים הבאות:למחלקה למחלות ממושכות בלשכת הבריאות במקום מגוריו של המטופל, עפ”י כתובתו בת”ז.ההגשה יכולה להתבצע: פיזית, בדואר אלקטרוני, פקס או הגשה אונליין"
             android:textSize="15dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="46dp"
-            tools:layout_editor_absoluteY="200dp" />
-
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.343" />
 
         <Button
-            android:id="@+id/btnSearchOpt1Q4"
+            android:id="@+id/btnReturnLvl1"
             android:layout_width="160dp"
             android:layout_height="55dp"
-            android:layout_marginTop="572dp"
             android:background="@drawable/btn_curved"
             android:text="חזרה לשלב 1 "
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.561"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_bias="0.849" />
 
         <Button
-            android:id="@+id/btnSearchOpt1Q2"
+            android:id="@+id/btnOnlineReq"
             android:layout_width="98dp"
             android:layout_height="46dp"
-            android:layout_marginTop="416dp"
             android:background="@drawable/btn_curved"
             android:text="לחץ כאן "
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintHorizontal_bias="0.051"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_bias="0.598" />
 
         <Button
-            android:id="@+id/btnSearchOpt1Q5"
+            android:id="@+id/btnDepByAdress"
             android:layout_width="98dp"
             android:layout_height="46dp"
-            android:layout_marginTop="336dp"
             android:background="@drawable/btn_curved"
             android:text="לחץ כאן"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintHorizontal_bias="0.051"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_bias="0.499" />
 
         <Button
-            android:id="@+id/btnReturnHome"
+            android:id="@+id/btnReturnHome2"
             android:layout_width="wrap_content"
             android:layout_height="59dp"
             android:background="@android:color/transparent"
@@ -140,8 +152,12 @@
             android:textColor="@color/black"
             android:textSize="16dp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="140dp"
-            tools:layout_editor_absoluteY="509dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.748" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

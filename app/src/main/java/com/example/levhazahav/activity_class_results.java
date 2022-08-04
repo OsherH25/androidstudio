@@ -42,6 +42,7 @@ public class activity_class_results extends AppCompatActivity implements View.On
         btnStartClassifyAgain.setOnClickListener(this);
         btnReturnToHomeQuestions.setOnClickListener(this);
 
+
         getInfo=getIntent();
         Classification=getInfo.getStringExtra("classification");
 
@@ -49,10 +50,7 @@ public class activity_class_results extends AppCompatActivity implements View.On
         if (Classification.equals("עצמאי")== true)
         {
             tvResults.setText("עצמאי");
-            explainResults.setText("אם הסיווג הרפואי של האדם הינו “סיעודי” \n" +
-                    "הוא מתאים לאשפוז במחלקה לסיעודיים או במחלקה לתשושי נפש. \n" +
-                    "במצב זה קיימת אפשרות לקבל סיוע כספי ממשרד הבריאות למימון עלות האשפוז.\n" +
-                    "הסיוע ניתן בהתאם למצבם הכלכלי של המטופל ובני משפחתו.");
+            explainResults.setText(" הסיווג הרפואי של האדם הינו “תשוש”");
 
         }
         else
@@ -60,10 +58,7 @@ public class activity_class_results extends AppCompatActivity implements View.On
         if (Classification.equals("תשוש")== true)
         {
             tvResults.setText("תשוש");
-            explainResults.setText("אם הסיווג הרפואי של האדם הינו “סיעודי” \n" +
-                    "הוא מתאים לאשפוז במחלקה לסיעודיים או במחלקה לתשושי נפש. \n" +
-                    "במצב זה קיימת אפשרות לקבל סיוע כספי ממשרד הבריאות למימון עלות האשפוז.\n" +
-                    "הסיוע ניתן בהתאם למצבם הכלכלי של המטופל ובני משפחתו.");
+            explainResults.setText(" הסיווג הרפואי של האדם הינו “תשוש”");
 
         }
         else
@@ -82,7 +77,7 @@ public class activity_class_results extends AppCompatActivity implements View.On
         if (Classification.equals("תשוש נפש")== true)
         {
             tvResults.setText("תשוש נפש");
-            explainResults.setText("אם הסיווג הרפואי של האדם הינו “סיעודי” \n" +
+            explainResults.setText("אם הסיווג הרפואי של האדם הינו “תשוש נפש” \n" +
                     "הוא מתאים לאשפוז במחלקה לסיעודיים או במחלקה לתשושי נפש. \n" +
                     "במצב זה קיימת אפשרות לקבל סיוע כספי ממשרד הבריאות למימון עלות האשפוז.\n" +
                     "הסיוע ניתן בהתאם למצבם הכלכלי של המטופל ובני משפחתו.");
@@ -93,10 +88,7 @@ public class activity_class_results extends AppCompatActivity implements View.On
         if (Classification.equals("סיעודי מורכב")== true)
         {
             tvResults.setText("סיעודי מורכב");
-            explainResults.setText("אם הסיווג הרפואי של האדם הינו “סיעודי” \n" +
-                    "הוא מתאים לאשפוז במחלקה לסיעודיים או במחלקה לתשושי נפש. \n" +
-                    "במצב זה קיימת אפשרות לקבל סיוע כספי ממשרד הבריאות למימון עלות האשפוז.\n" +
-                    "הסיוע ניתן בהתאם למצבם הכלכלי של המטופל ובני משפחתו.");
+            explainResults.setText("אם הסיווג הרפואי של האדם הינו “סיעודי מורכב" );
 
         }
 
@@ -148,6 +140,7 @@ public class activity_class_results extends AppCompatActivity implements View.On
 
             case R.id.btnGoToLvls:
                 Intent intent = new Intent(activity_class_results.this, activity_req_info.class);
+                intent.putExtra("Classification", Classification );
                 startActivity(intent);
                 break;
 

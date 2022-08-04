@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -16,6 +17,10 @@ public class activity_req_info extends AppCompatActivity implements View.OnClick
 
 
     BottomNavigationView nav;
+    Intent getInfo;
+    Button btnGotolvl1,btnReturnHome1;
+    String Classification;
+    TextView tvResults1;
 
 
 
@@ -23,8 +28,24 @@ public class activity_req_info extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_req_info);
-
         nav = findViewById(R.id.bottom_navigation);
+        btnGotolvl1 = findViewById(R.id.btnGotolvl1);
+        btnReturnHome1 = findViewById(R.id.btnReturnHome1);
+
+        btnGotolvl1.setOnClickListener(this);
+        btnReturnHome1.setOnClickListener(this);
+
+
+        tvResults1 = findViewById(R.id.tvResults1);
+
+        getInfo=getIntent();
+        Classification=getInfo.getStringExtra("classification");
+
+
+            tvResults1.setText(" לפי המידע שהזנת , הסיווג הרפואי של בן משפחתך הינו"+ Classification);
+
+
+
 
 
         nav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -72,13 +93,13 @@ public class activity_req_info extends AppCompatActivity implements View.OnClick
         switch (view.getId()) {
 
 
-            case R.id.btnContinueToClassify:
-                Intent intent = new Intent(activity_req_info.this, activity_classify.class);
+            case R.id.btnGotolvl1:
+                Intent intent = new Intent(activity_req_info.this, activity_req_info_2.class);
                 startActivity(intent);
                 break;
 
 
-            case R.id.btnReturnHomeDirect:
+            case R.id.btnReturnHome1:
                 Intent intent1 = new Intent(activity_req_info.this, MainActivity.class);
                 startActivity(intent1);
                 break;
